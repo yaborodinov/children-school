@@ -1,0 +1,35 @@
+.navigation{
+    justify-content: flex-end;
+}
+.nav-item{
+    padding: 1.4rem 0rem;
+    margin-left: 5rem;
+    @include breakpoint($extra-large){
+    margin-left: 3.5rem;
+    }
+}
+
+
+.navbar__social-instagram{
+    width: 24px;
+    height: 24px;
+    margin-right: 1.5rem;
+}
+.navbar-nav{
+    margin-right: 3.4rem;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0.8rem 1.6rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $white;
+    @include breakpoint($extra-large){
+    font-size: 1.3rem;
+    }
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active{
+    color: $primary;
+    background: linear-gradient(180deg, #CAA960 0%, #F3D48E 100%);
+    border-radius: 3.2rem;
+}

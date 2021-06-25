@@ -1,0 +1,57 @@
+.about__school{
+    margin-top: -7rem;
+    width: 100%;
+    height: 62.4rem;
+    
+    z-index: 10;
+    background-image: url(/assets/images/margaret.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.about__school-inner{
+    width: 100%;
+    height: 100%;
+    background-color: #152d3380;
+    z-index: 2;
+}
+.about__school-info{
+    padding-top: 160px;
+    max-width: 74.5rem;
+}
+.about__school-title{
+    padding-right: 4rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: $white;
+    line-height: 4.1rem;
+}
+.about__school-subtitle{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding-right: 19.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $white;
+    line-height: 2.7rem;
+}
+.about__school-advantages-block{
+    margin-top: 7rem;
+}
+.about__school-advantages-item{
+    align-items: center;
+    &--min{
+        width: 22rem;
+    }
+    &--max{
+        width: 25.9rem;
+    }
+    &--medium{
+        width: 21.6rem;
+    }
+    h3{
+        font-weight: 600;
+        margin-left: 1.5rem;
+        line-height: 1.9rem;
+    }
+    
+}
