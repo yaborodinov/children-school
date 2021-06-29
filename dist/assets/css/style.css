@@ -12473,7 +12473,7 @@ a:hover {
 
 .about__school-info {
     padding-top: 160px;
-    max-width: 70rem;
+    max-width: 74.5rem;
 }
 
 .about__school-title {
@@ -12487,16 +12487,32 @@ a:hover {
 .about__school-subtitle {
     margin-top: 3rem;
     margin-bottom: 4rem;
-    padding-right: 15rem;
+    padding-right: 19.5rem;
     font-size: 2rem;
     font-weight: 600;
     color: #FFFFFF;
     line-height: 2.7rem;
 }
 
+.about__school-advantages-block {
+    margin-top: 7rem;
+}
+
 .about__school-advantages-item {
     -ms-flex-align: center;
     align-items: center;
+}
+
+.about__school-advantages-item--min {
+    width: 22rem;
+}
+
+.about__school-advantages-item--max {
+    width: 25.9rem;
+}
+
+.about__school-advantages-item--medium {
+    width: 21.6rem;
 }
 
 .about__school-advantages-item h3, .about__school-advantages-item .h3 {

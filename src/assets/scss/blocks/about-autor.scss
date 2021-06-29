@@ -1,0 +1,56 @@
+.about__author{
+    padding: 10rem 0;
+}
+
+
+.about__author-title{
+    font-weight: 800;
+    font-size: 2.7rem;
+    line-height: 3.6rem;
+    color: $primary;
+    text-align: center;
+}
+
+.about__author-info-text-block{
+    position: relative;
+}
+
+.about__author-info{
+    margin-top: 5rem;
+}
+.about__author-text-block{
+    color: $primary;
+    margin-bottom: 3rem;
+}
+
+.about__autor-img{
+    margin-right: 5.5rem;
+}
+.about__author-text{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+}
+.about__author-text:nth-child(1){
+    max-width: 53.7rem;
+}
+.about__author-text:nth-child(2){
+    padding-left: 3rem;
+}
+.about__author-text:nth-child(3){
+    padding-left: 6rem;
+}
+.about__author-text:last-child{
+    margin-bottom: 0;
+}
+.about__author-link-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-6.7rem)
+    
+}
+.about__author-link{
+    margin: 0 auto;
+}
