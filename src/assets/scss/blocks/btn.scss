@@ -1,4 +1,4 @@
-.btn__submit{
+.btn__submit {
     display: inline-block;
     background: $yellow-gradient;
     font-size: 1.6rem;
@@ -7,4 +7,23 @@
     padding: 1.3rem 1.7rem;
     line-height: 2.1rem;
     text-transform: uppercase;
+    &--fortoggle{
+        width: 17.6rem;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        
+    }
+    &--deactivated{
+        color: $white;
+        background: transparent;
+        border: 1px solid #CAA960;
+        &:hover{
+            color: $white;
+        }
+    }
+    &--margin30{
+        margin-right: 3rem;
+    }
 }
+
+

@@ -7814,6 +7814,7 @@ body {
   box-sizing: border-box; }
 
 a {
+  display: block;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -7911,6 +7912,18 @@ a {
   padding: 1.3rem 1.7rem;
   line-height: 2.1rem;
   text-transform: uppercase; }
+  .btn__submit--fortoggle {
+    width: 17.6rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem; }
+  .btn__submit--deactivated {
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #CAA960; }
+    .btn__submit--deactivated:hover {
+      color: #FFFFFF; }
+  .btn__submit--margin30 {
+    margin-right: 3rem; }
 
 .about__author {
   padding: 10rem 0; }
@@ -8012,3 +8025,53 @@ a {
   margin-left: auto;
   margin-right: 6rem;
   text-align: center; }
+
+.price {
+  padding: 5rem 0;
+  margin-top: -2px;
+  background-color: #152D33; }
+
+.price__title {
+  font-weight: 800;
+  font-size: 2.7rem;
+  line-height: 3.6rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.price__block {
+  margin-top: 5rem;
+  justify-content: space-between; }
+  .price__block .col {
+    width: 37rem; }
+
+.price__item {
+  max-width: 37rem;
+  padding: 3rem 0;
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
+  border-radius: 7px;
+  position: relative; }
+  .price__item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+    width: 3.4rem;
+    height: 3.5rem;
+    background-image: url(/assets/images/dumbbells.svg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.price__block-title {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin-bottom: 2rem; }
+
+.price__block-cost {
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  line-height: 2.4rem;
+  margin-bottom: 3.5rem; }

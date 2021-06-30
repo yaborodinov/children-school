@@ -27,6 +27,7 @@ body {
 }
 
 a{
+    display: block;
     text-decoration: none;
     &:hover{
         text-decoration: underline;
@@ -39,3 +40,4 @@ a{
 @import "./blocks/btn.scss";
 @import "./blocks/about-autor.scss";
 @import "./blocks/purpose.scss";
+@import "./blocks/price.scss";
