@@ -7924,6 +7924,13 @@ a {
       color: #FFFFFF; }
   .btn__submit--margin30 {
     margin-right: 3rem; }
+  .btn__submit--form {
+    display: block;
+    color: #152D33;
+    border: none;
+    margin-top: 3.3rem;
+    margin-left: auto;
+    margin-right: auto; }
 
 .about__author {
   padding: 10rem 0; }
@@ -7946,7 +7953,7 @@ a {
   margin-bottom: 3rem; }
 
 .about__autor-img {
-  margin-right: 5.5rem; }
+  max-width: 53rem; }
 
 .about__author-text {
   font-weight: 400;
@@ -8075,3 +8082,106 @@ a {
   color: #FFFFFF;
   line-height: 2.4rem;
   margin-bottom: 3.5rem; }
+
+.learning__process {
+  margin: 10rem 0; }
+
+.learning__process-title {
+  color: #152D33;
+  font-size: 2.7rem;
+  font-weight: 800;
+  line-height: 3.6rem;
+  text-align: center;
+  margin-bottom: 5rem; }
+
+.learning__process-info-item-wrapper {
+  padding-right: 3.5rem; }
+
+.learning__process-info-item {
+  width: 26.8rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.6rem;
+  background-color: #152D33;
+  box-shadow: 0px 0px 15px rgba(21, 45, 51, 0.35);
+  border-radius: 7px; }
+  .learning__process-info-item:nth-child(2) {
+    margin-right: 0;
+    margin-left: auto; }
+
+.learning__process-info-item-video-block {
+  max-width: 95rem; }
+  .learning__process-info-item-video-block video {
+    width: 100%;
+    height: auto; }
+
+.learning__process-info-item-video {
+  width: 100%; }
+
+.consultation__wrapper {
+  padding: 5rem 0;
+  background-image: url(/assets/images/rob.jpg); }
+
+.consultation__title {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 2.7rem;
+  line-height: 3.6rem;
+  margin-bottom: 5rem; }
+
+.form__wrapper {
+  width: 37rem;
+  background-color: #152D33;
+  padding: 2.5rem 3rem;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: 0.6rem; }
+  .form__wrapper h4, .form__wrapper .h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 2.4rem;
+    margin-bottom: 0.5rem; }
+  .form__wrapper h5, .form__wrapper .h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 3rem; }
+
+.form-label {
+  margin-bottom: 0.6rem; }
+
+.form-control {
+  background-color: #152D33;
+  border: 1px solid #F3D48E;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem; }
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6rem;
+    font-size: 1.2rem; }
+  .form-control:focus {
+    background-color: #152D33;
+    color: #FFFFFF;
+    border-color: #F3D48E;
+    box-shadow: 0px 0px 7px #FFFFFF; }
+
+.form-check-input, .form-check-input:checked {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #CAA960; }
+  .form-check-input::selection, .form-check-input:checked::selection {
+    background: none; }
+
+.form-check-label {
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 1.3rem; }
