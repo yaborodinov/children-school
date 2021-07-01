@@ -2,7 +2,7 @@
     margin: 10rem 0;
 }
 
-.learning__process-title{
+.learning__process-title, .schedule__title, .question__title{
     color: $primary;
     font-size: 2.7rem;
     font-weight: 800;
@@ -29,13 +29,21 @@
         margin-right: 0;
         margin-left: auto;
     }
+    // @include breakpoint($tablet-bp){
+    //     display: block;
+    // }
+    @include media-breakpoint-down(xl) { 
+        margin-bottom: 2.5rem;    
+    }
 }
 
 .learning__process-info-item-video-block{
     max-width: 95rem;
+    
     video{
         width: 100%;
         height: auto;
+        border-radius: 1rem;
     }
 }
 .learning__process-info-item-video{

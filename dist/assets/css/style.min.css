@@ -8080,13 +8080,14 @@ a {
 .price__block-cost {
   font-size: 2.2rem;
   color: #FFFFFF;
-  line-height: 2.4rem;
+  font-weight: 800;
+  line-height: 3rem;
   margin-bottom: 3.5rem; }
 
 .learning__process {
   margin: 10rem 0; }
 
-.learning__process-title {
+.learning__process-title, .schedule__title, .question__title {
   color: #152D33;
   font-size: 2.7rem;
   font-weight: 800;
@@ -8110,19 +8111,26 @@ a {
   .learning__process-info-item:nth-child(2) {
     margin-right: 0;
     margin-left: auto; }
+  @media (max-width: 1199.98px) {
+    .learning__process-info-item {
+      margin-bottom: 2.5rem; } }
 
 .learning__process-info-item-video-block {
   max-width: 95rem; }
   .learning__process-info-item-video-block video {
     width: 100%;
-    height: auto; }
+    height: auto;
+    border-radius: 1rem; }
 
 .learning__process-info-item-video {
   width: 100%; }
 
 .consultation__wrapper {
   padding: 5rem 0;
-  background-image: url(/assets/images/rob.jpg); }
+  background-image: url(/assets/images/rob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .consultation__title {
   text-align: center;
@@ -8185,3 +8193,128 @@ a {
   font-weight: 200;
   font-size: 1.1rem;
   line-height: 1.3rem; }
+
+.schedule {
+  margin: 10rem 0; }
+
+.schedule__block {
+  justify-content: center; }
+  @media (max-width: 1199.98px) {
+    .schedule__block {
+      justify-content: start;
+      flex-wrap: nowrap;
+      overflow-x: auto; } }
+
+.schedule__item {
+  min-width: 25.8rem;
+  max-width: 25.8rem;
+  margin-right: 6.6rem;
+  margin-bottom: 4rem; }
+  .schedule__item .schedule__row-item:last-child {
+    border-radius: 0 0 7px 7px; }
+  @media (max-width: 1199.98px) {
+    .schedule__item {
+      margin-right: 4rem; } }
+  @media (max-width: 991.98px) {
+    .schedule__item {
+      margin-right: 2.5rem; } }
+
+.schedule__item-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+  background-color: #152D33;
+  padding: 1.7rem 0;
+  text-align: center;
+  border-radius: 7px 7px 0 0; }
+
+.schedule__row-item {
+  display: flex;
+  color: #152D33;
+  font-size: 1.2rem;
+  background: rgba(21, 45, 51, 0.5); }
+  .schedule__row-item div {
+    padding: 1.2rem 0; }
+  .schedule__row-item--light {
+    background: rgba(21, 45, 51, 0.2); }
+
+.schedule__item-col-time {
+  width: 9.5rem;
+  border-right: 1px solid rgba(76, 71, 71, 0.29);
+  text-align: center; }
+
+.schedule__item-col-description {
+  margin-left: 1rem; }
+
+.schedule__arrow-block {
+  justify-content: center;
+  display: none; }
+  @media (max-width: 1199.98px) {
+    .schedule__arrow-block {
+      display: flex; } }
+
+.schedule__arrow-item {
+  max-width: 5rem;
+  height: 1px;
+  background-color: rgba(97, 96, 96, 0.486);
+  position: relative; }
+  .schedule__arrow-item:first-child:after {
+    display: block;
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border-left: 1px solid rgba(97, 96, 96, 0.486);
+    border-top: 1px solid rgba(97, 96, 96, 0.486);
+    position: absolute;
+    top: -3.5px;
+    left: 0;
+    transform: rotate(-45deg); }
+  .schedule__arrow-item:last-child:after {
+    display: block;
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border-left: 1px solid rgba(97, 96, 96, 0.486);
+    border-top: 1px solid rgba(97, 96, 96, 0.486);
+    position: absolute;
+    top: -3.5px;
+    right: 0;
+    transform: rotate(135deg); }
+  .schedule__arrow-item:first-child {
+    margin-right: 3rem; }
+
+.accordion-item {
+  margin-bottom: 3rem;
+  border: 1px solid #152D33;
+  border-radius: 7px; }
+
+.accordion-button {
+  border-radius: 7px;
+  background-color: #152D33;
+  color: #FFFFFF;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem; }
+  .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none; }
+  .accordion-button::after {
+    background-image: url(/assets/images/arrow.svg); }
+
+.accordion-button:not(.collapsed) {
+  background-color: #152D33;
+  color: #FFFFFF; }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/images/arrow.svg); }
+
+.accordion-collapse {
+  border: none; }
+
+.accordion-body {
+  padding: 2rem 4rem;
+  color: #152D33;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem; }

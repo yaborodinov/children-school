@@ -1,0 +1,109 @@
+.schedule{
+    margin: 10rem 0;
+}
+.schedule__block{
+    justify-content: center;
+    @include media-breakpoint-down(xl) { 
+        justify-content: start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+}
+
+.schedule__item{
+    min-width: 25.8rem;
+    max-width: 25.8rem;
+    margin-right: 6.6rem;
+    margin-bottom: 4rem;
+    .schedule__row-item:last-child{
+        border-radius: 0 0 7px 7px;
+    }
+    @include media-breakpoint-down(xl) {
+        margin-right: 4rem;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-right: 2.5rem;
+    }
+    
+}
+.schedule__item-title{
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.4rem;
+    color: $white;
+    background-color: $primary;
+    padding: 1.7rem 0;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+    
+}
+.schedule__row-item{
+    display: flex;
+    color: $primary;
+    font-size: 1.2rem;
+    
+    background: rgba(21, 45, 51, 0.5);
+    div{
+        padding: 1.2rem 0;
+        
+    }
+   
+    
+    &--light{
+        background: rgba(21, 45, 51, 0.2);
+    }
+}
+
+.schedule__item-col-time{
+    width: 9.5rem;
+    border-right: 1px solid rgba(76, 71, 71, 0.29);
+    text-align: center;
+}
+.schedule__item-col-description{
+    margin-left: 1rem;
+}
+
+.schedule__arrow-block{
+    justify-content: center;
+    display: none;
+    @include media-breakpoint-down(xl) {
+        
+        display: flex;
+    }
+}
+.schedule__arrow-item{
+    max-width: 5rem;
+    height: 1px;
+    background-color: rgba(97, 96, 96, 0.486);
+    position: relative;
+    &:first-child:after{
+        display: block;
+        content: "";
+        width: 0.8rem;
+        height: 0.8rem;
+        border-left: 1px solid rgba(97, 96, 96, 0.486);
+        border-top: 1px solid rgba(97, 96, 96, 0.486);
+        position: absolute;
+        top: -3.5px;
+        left: 0;
+        transform: rotate(-45deg);
+        
+    }
+    &:last-child:after{
+        display: block;
+        content: "";
+        width: 0.8rem;
+        height: 0.8rem;
+        border-left: 1px solid rgba(97, 96, 96, 0.486);
+        border-top: 1px solid rgba(97, 96, 96, 0.486);
+        position: absolute;
+        top: -3.5px;
+        right: 0;
+        transform: rotate(135deg);
+    }
+    
+    &:first-child{
+        margin-right: 3rem;
+    }
+}
