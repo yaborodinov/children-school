@@ -1,5 +1,5 @@
 .price{
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
     margin-top: -2px;
     background-color: $primary;
 }
@@ -17,23 +17,44 @@
 // price
 
 .price__block{
-    margin-top: 5rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     justify-content: space-between;
-        display: none;
+    display: none;
+    
     &--active{
         display: flex;
+        
     }
+    @include media-breakpoint-down(xl){
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
     .col{
         width: 37rem;
     }
 }
 
 .price__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 37rem;
-    padding: 3rem 0;
+    min-width: 37rem;
+    margin-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.25);
     border-radius: 7px;
     position: relative;
+    &:first-child{
+        margin-left: 2rem;
+    }
+    
+    
     &:after{
         content: "";
         display: block;

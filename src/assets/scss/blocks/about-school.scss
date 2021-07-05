@@ -15,8 +15,11 @@
     z-index: 2;
 }
 .about__school-info{
-    padding-top: 160px;
+    padding-top: 16rem;
     max-width: 74.5rem;
+    @include media-breakpoint-down(xl) { 
+        padding-top: 15rem;
+    }
 }
 .about__school-title{
     padding-right: 4rem;

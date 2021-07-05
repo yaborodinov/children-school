@@ -1,9 +1,15 @@
 .questions{
     margin: 6rem 0 10rem;
+    @include media-breakpoint-down(xl) { 
+        margin: 6rem 0 8rem;
+    }
 }
 
 .schedule{
     margin: 10rem 0;
+    @include media-breakpoint-down(xl) { 
+        margin: 8rem 0;
+    }
 }
 .schedule__block{
     justify-content: center;

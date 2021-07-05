@@ -2,7 +2,7 @@
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", (e) => {
-  pageYOffset > 101 ? header.classList.add("header--dark") : header.classList.remove("header--dark");
+  (pageYOffset > 101) || !navToggler.classList.contains("collapsed") ? header.classList.add("header--dark") : header.classList.remove("header--dark");
   
 })
 
@@ -26,4 +26,14 @@ bntIndividualLesson.addEventListener("click", () => {
   bntIndividualLesson.classList.remove("btn__submit--deactivated")
   blockGroupLesson.classList.remove("price__block--active");
   blockIndividualLesson.classList.add("price__block--active");
+})
+
+
+
+// header
+
+const navToggler = document.querySelector(".navbar-toggler");
+
+navToggler.addEventListener("click", () => {
+  !navToggler.classList.contains("collapsed") ? header.classList.add("header--dark") : header.classList.remove("header--dark")
 })
