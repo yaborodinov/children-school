@@ -19,6 +19,10 @@
 .price__block{
     margin-top: 5rem;
     justify-content: space-between;
+        display: none;
+    &--active{
+        display: flex;
+    }
     .col{
         width: 37rem;
     }
