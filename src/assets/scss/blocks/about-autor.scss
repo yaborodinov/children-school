@@ -41,9 +41,10 @@
     max-width: 53rem;
     @include media-breakpoint-down(xl){
         margin: 0 auto;
-
     }
-    // margin-right: 5.5rem;
+    @include media-breakpoint-down(xl){
+        width: 100%;
+    }
 }
 .about__author-text{
     font-weight: 400;
