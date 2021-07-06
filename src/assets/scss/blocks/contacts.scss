@@ -45,16 +45,16 @@
 .contact__subtitle-img{
     width: 2rem;
     height: 2rem;
-    background-image: url(/assets/images/black-placeholder-variant.svg);
+    background-image: url(../images/black-placeholder-variant.svg);
     background-position: center;
     background-size: cover;
     margin-right: 1.5rem;
     &--email{
-        background-image: url(/assets/images/email.svg);
+        background-image: url(../images/email.svg);
         margin-right: 1rem;
     }
     &--phone{
-        background-image: url(/assets/images/phone-receiver-silhouette.svg);
+        background-image: url(../images/phone-receiver-silhouette.svg);
         margin-right: 1rem;
     }
     
@@ -81,9 +81,9 @@
     background-position: center;
     background-size: cover;
     &--insta{
-        background-image: url(/assets/images/social/insta.svg);
+        background-image: url(../images/social/insta.svg);
     }
     &--youtube{
-        background-image: url(/assets/images/social/youtube.svg);
+        background-image: url(../images/social/youtube.svg);
     }
 }

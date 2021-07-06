@@ -12913,7 +12913,7 @@ a:focus {
     right: 1rem;
     width: 3.4rem;
     height: 3.5rem;
-    background-image: url(/assets/images/dumbbells.svg);
+    background-image: url(images/dumbbells.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13027,7 +13027,7 @@ a:focus {
 
 .consultation__wrapper {
     padding: 5rem 0;
-    background-image: url(/assets/images/rob.jpg);
+    background-image: url(assets/images/rob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13308,7 +13308,7 @@ a:focus {
 }
 
 .accordion-button::after {
-    background-image: url(/assets/images/arrow.svg);
+    background-image: url(assets/images/arrow.svg);
 }
 
 .accordion-button:not(.collapsed) {
@@ -13317,7 +13317,7 @@ a:focus {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(/assets/images/arrow.svg);
+    background-image: url(assets/images/arrow.svg);
 }
 
 .accordion-collapse {
@@ -13391,19 +13391,19 @@ a:focus {
 .contact__subtitle-img {
     width: 2rem;
     height: 2rem;
-    background-image: url(/assets/images/black-placeholder-variant.svg);
+    background-image: url(assets/images/black-placeholder-variant.svg);
     background-position: center;
     background-size: cover;
     margin-right: 1.5rem;
 }
 
 .contact__subtitle-img--email {
-    background-image: url(/assets/images/email.svg);
+    background-image: url(assets/images/email.svg);
     margin-right: 1rem;
 }
 
 .contact__subtitle-img--phone {
-    background-image: url(/assets/images/phone-receiver-silhouette.svg);
+    background-image: url(assets/images/phone-receiver-silhouette.svg);
     margin-right: 1rem;
 }
 
@@ -13433,9 +13433,9 @@ a:focus {
 }
 
 .contact__social-item--insta {
-    background-image: url(/assets/images/social/insta.svg);
+    background-image: url(assets/images/social/insta.svg);
 }
 
 .contact__social-item--youtube {
-    background-image: url(/assets/images/social/youtube.svg);
+    background-image: url(assets/images/social/youtube.svg);
 }
