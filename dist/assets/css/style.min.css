@@ -7816,6 +7816,9 @@ a {
   background-image: url(../images/margaret.jpg);
   background-size: cover;
   background-position: center; }
+  @media (max-width: 575.98px) {
+    .about__school {
+      height: 60.4rem; } }
 
 .about__school-inner {
   width: 100%;
@@ -7846,8 +7849,7 @@ a {
     .about__school-title {
       padding-right: 0;
       font-size: 2.1rem;
-      line-height: 2.8rem;
-      text-align: center; } }
+      line-height: 2.8rem; } }
 
 .about__school-subtitle {
   margin-top: 3rem;
@@ -7865,8 +7867,7 @@ a {
       padding-right: 0;
       font-size: 1.4rem;
       line-height: 1.9rem;
-      text-align: center;
-      margin-bottom: 5rem; } }
+      margin-bottom: 10rem; } }
 
 .about__school-advantages-block {
   margin-top: 7rem; }
@@ -7874,9 +7875,6 @@ a {
     .about__school-advantages-block {
       justify-content: space-around;
       flex-wrap: wrap; } }
-  @media (max-width: 575.98px) {
-    .about__school-advantages-block {
-      justify-content: start; } }
 
 .about__school-advantages-item {
   align-items: center; }
@@ -7884,19 +7882,23 @@ a {
     width: 22rem; }
     @media (max-width: 575.98px) {
       .about__school-advantages-item--min {
-        width: 20rem; } }
+        width: 14rem; } }
   .about__school-advantages-item--max {
     width: 25.9rem; }
   .about__school-advantages-item--medium {
     width: 21.6rem; }
+    @media (max-width: 575.98px) {
+      .about__school-advantages-item--medium {
+        width: 14rem; } }
   .about__school-advantages-item h3, .about__school-advantages-item .h3 {
     font-weight: 600;
     margin-left: 1.5rem;
     line-height: 1.9rem; }
     @media (max-width: 575.98px) {
       .about__school-advantages-item h3, .about__school-advantages-item .h3 {
-        margin-left: 1rem;
-        line-height: 1.7rem; } }
+        margin-left: 1.5rem;
+        line-height: 1.7rem;
+        font-size: 0.9rem; } }
   .about__school-advantages-item img {
     width: 4.5rem;
     height: 4.5rem; }
@@ -8002,6 +8004,9 @@ a {
       font-size: 1.4rem;
       line-height: 2rem;
       font-size: 2rem; } }
+  @media (max-width: 767.98px) {
+    .about__author-text {
+      font-size: 1.8rem; } }
 
 .about__author-text:nth-child(1) {
   max-width: 53.7rem; }
@@ -8163,8 +8168,8 @@ a {
   position: relative; }
   @media (max-width: 767.98px) {
     .price__item {
-      max-width: 25.7rem;
-      min-width: 25.7rem;
+      max-width: 28.7rem;
+      min-width: 28.7rem;
       margin-right: 0;
       margin-bottom: 3.5rem; } }
   .price__item:first-child {
