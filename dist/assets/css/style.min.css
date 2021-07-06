@@ -7835,9 +7835,6 @@ a {
   @media (max-width: 767.98px) {
     .about__school-info {
       padding-top: 12rem; } }
-  @media (max-width: 575.98px) {
-    .about__school-info a {
-      margin-left: 4.5rem; } }
 
 .about__school-title {
   padding-right: 4rem;
@@ -7870,35 +7867,25 @@ a {
       margin-bottom: 10rem; } }
 
 .about__school-advantages-block {
-  margin-top: 7rem; }
-  @media (max-width: 767.98px) {
+  margin-top: 7rem;
+  width: 100%; }
+  @media (max-width: 991.98px) {
     .about__school-advantages-block {
       justify-content: space-around;
       flex-wrap: wrap; } }
 
 .about__school-advantages-item {
+  display: flex;
   align-items: center; }
-  .about__school-advantages-item--min {
-    width: 22rem; }
-    @media (max-width: 575.98px) {
-      .about__school-advantages-item--min {
-        width: 14rem; } }
-  .about__school-advantages-item--max {
-    width: 25.9rem; }
-  .about__school-advantages-item--medium {
-    width: 21.6rem; }
-    @media (max-width: 575.98px) {
-      .about__school-advantages-item--medium {
-        width: 14rem; } }
   .about__school-advantages-item h3, .about__school-advantages-item .h3 {
     font-weight: 600;
     margin-left: 1.5rem;
     line-height: 1.9rem; }
     @media (max-width: 575.98px) {
       .about__school-advantages-item h3, .about__school-advantages-item .h3 {
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         line-height: 1.7rem;
-        font-size: 0.9rem; } }
+        font-size: 1rem; } }
   .about__school-advantages-item img {
     width: 4.5rem;
     height: 4.5rem; }
@@ -7906,11 +7893,17 @@ a {
       .about__school-advantages-item img {
         width: 2rem;
         height: 2rem; } }
-  .about__school-advantages-item:nth-child(2) {
-    order: 3; }
+  @media (max-width: 991.98px) {
+    .about__school-advantages-item {
+      max-width: 26rem;
+      min-width: 24rem;
+      margin-bottom: 1.5rem; }
+      .about__school-advantages-item:nth-child(2) {
+        order: 3; } }
   @media (max-width: 575.98px) {
     .about__school-advantages-item {
-      margin-bottom: 1.5rem; } }
+      min-width: 14rem;
+      max-width: 18rem; } }
 
 .contact__block-submit-wrapper {
   display: flex;

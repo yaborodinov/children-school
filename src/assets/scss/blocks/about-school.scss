@@ -26,11 +26,7 @@
     @include media-breakpoint-down(md) { 
         padding-top: 12rem;
     }
-    a{
-        @include media-breakpoint-down(sm) { 
-            margin-left: 4.5rem;
-        }
-    }
+    
 }
 .about__school-title{
     padding-right: 4rem;
@@ -64,39 +60,32 @@
 }
 .about__school-advantages-block{
     margin-top: 7rem;
+    width: 100%;
     
-    @include media-breakpoint-down(md) {
+    
+    @include media-breakpoint-down(lg) {
         justify-content: space-around;
         flex-wrap: wrap;
+        
+
     }
     
 }
 .about__school-advantages-item{
+    display: flex;
     align-items: center;
-    &--min{
-        width: 22rem;
-        @include media-breakpoint-down(sm) {
-            width: 14rem;
-        }
-    }
-    &--max{
-        width: 25.9rem;
-        
-    }
-    &--medium{
-        width: 21.6rem;
-        @include media-breakpoint-down(sm) {
-            width: 14rem;
-        }
-    }
+    
+    
+    
+    
     h3{
         font-weight: 600;
         margin-left: 1.5rem;
         line-height: 1.9rem;
         @include media-breakpoint-down(sm) {
-            margin-left: 1.5rem;
+            margin-left: 1rem;
             line-height: 1.7rem;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
         
     }
@@ -111,11 +100,25 @@
         }
     }
 
-    &:nth-child(2){
+    
+    @include media-breakpoint-down(lg) {
+        max-width: 26rem;
+        min-width: 24rem;
+        margin-bottom: 1.5rem;
+        &:nth-child(2){
         order: 3;
     }
-
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 1.5rem;
     }
+    @include media-breakpoint-down(sm) {
+        min-width: 14rem;
+        max-width: 18rem;
+        
+    }
+    
 }
+// .about__school-advantages-item-text-longer{
+//     @include media-breakpoint-down(sm) {
+//         min-width: 14rem;
+//         max-width: 14rem;
+//     }
+// }
