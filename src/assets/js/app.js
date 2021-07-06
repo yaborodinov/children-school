@@ -38,9 +38,11 @@ navToggler.addEventListener("click", () => {
   !navToggler.classList.contains("collapsed") ? header.classList.add("header--dark") : header.classList.remove("header--dark")
 })
 
-// const navBarCollapse = document.querySelector(".navbar-collapse navigation collapse show");
-// const navItems = document.querySelectorAll('.nav-link');
+const navBarCollapse = document.querySelector(".navbar-collapse");
+const navItems = document.querySelectorAll('.nav-link');
 
-
-
-// console.log(navBarCollapse)
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navBarCollapse.classList.remove("show")
+  })
+})
