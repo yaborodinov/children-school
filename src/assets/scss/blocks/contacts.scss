@@ -1,23 +1,32 @@
 .contacts{
     position: relative;
-    iframe{
+    
+    @include media-breakpoint-down(md) {
+        position: static;
+    }
+    
+}
+iframe{
         display: block;
-        @include media-breakpoint-down(sm) { 
+        
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
-}
 .contact__block{
     position: absolute;
-    top: 11rem;
+    top: 13rem;
     width: 38rem;
     padding: 2.5rem;
     background-color: $primary;
     border-radius: 7px;
-    @include media-breakpoint-down(sm) { 
-            display: block;
-            width: 100%;
-        }
+    @include media-breakpoint-down(md) {
+        position: static;
+        width: 100%;
+        border-radius: 7px 7px 0 0 ;
+        
+    }
+    
 }
 
 .contact__title{
@@ -32,7 +41,14 @@
         line-height: 2.7rem;
         font-size: 2rem;
         margin-bottom: 4rem;
+        @include media-breakpoint-down(sm) { 
+            font-size: 1.8rem;
+        }
     }
+    @include media-breakpoint-down(sm) { 
+        font-size: 1.8rem;
+        
+     }
 }
 
 .contact__subtitle-block{
@@ -65,6 +81,11 @@
     font-weight: 400;
     line-height: 2.4rem;
     color: $white;
+    @include media-breakpoint-down(sm) {
+        font-size: 1.4rem;
+    }
+
+    
 
 }
 .contact__social{

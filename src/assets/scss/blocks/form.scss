@@ -20,6 +20,10 @@
         line-height: 1.6rem;
         margin-bottom: 3rem;
     }
+    @include media-breakpoint-down(sm) { 
+        width: 90%;
+        margin-right: auto;
+    }
 }
 .form-label{
     margin-bottom: 0.6rem;

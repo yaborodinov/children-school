@@ -5308,114 +5308,6 @@ textarea.form-control-lg {
     top: -1px;
 }
 
-.alert {
-    position: relative;
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-}
-
-.alert-heading {
-    color: inherit;
-}
-
-.alert-link {
-    font-weight: 700;
-}
-
-.alert-dismissible {
-    padding-right: 3rem;
-}
-
-.alert-dismissible .btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    padding: 1.25rem 1rem;
-}
-
-.alert-primary {
-    color: #084298;
-    background-color: #cfe2ff;
-    border-color: #b6d4fe;
-}
-
-.alert-primary .alert-link {
-    color: #06357a;
-}
-
-.alert-secondary {
-    color: #41464b;
-    background-color: #e2e3e5;
-    border-color: #d3d6d8;
-}
-
-.alert-secondary .alert-link {
-    color: #34383c;
-}
-
-.alert-success {
-    color: #0f5132;
-    background-color: #d1e7dd;
-    border-color: #badbcc;
-}
-
-.alert-success .alert-link {
-    color: #0c4128;
-}
-
-.alert-info {
-    color: #055160;
-    background-color: #cff4fc;
-    border-color: #b6effb;
-}
-
-.alert-info .alert-link {
-    color: #04414d;
-}
-
-.alert-warning {
-    color: #664d03;
-    background-color: #fff3cd;
-    border-color: #ffecb5;
-}
-
-.alert-warning .alert-link {
-    color: #523e02;
-}
-
-.alert-danger {
-    color: #842029;
-    background-color: #f8d7da;
-    border-color: #f5c2c7;
-}
-
-.alert-danger .alert-link {
-    color: #6a1a21;
-}
-
-.alert-light {
-    color: #636464;
-    background-color: #fefefe;
-    border-color: #fdfdfe;
-}
-
-.alert-light .alert-link {
-    color: #4f5050;
-}
-
-.alert-dark {
-    color: #141619;
-    background-color: #d3d3d4;
-    border-color: #bcbebf;
-}
-
-.alert-dark .alert-link {
-    color: #101214;
-}
-
 @-webkit-keyframes progress-bar-stripes {
     0% {
         background-position-x: 1rem;
@@ -12514,7 +12406,7 @@ a:focus {
     width: 100%;
     height: 62.4rem;
     z-index: 10;
-    background-image: url(/assets/images/margaret.jpg);
+    background-image: url(../images/margaret.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -12630,6 +12522,14 @@ a:focus {
     margin-left: 6rem;
 }
 
+@media (max-width: 767.98px) {
+    .btn__submit {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        padding: 0.9rem 1.3rem;
+    }
+}
+
 .about__author {
     padding: 10rem 0;
 }
@@ -12702,11 +12602,19 @@ a:focus {
 @media (max-width: 1199.98px) {
     .about__author-text {
         font-size: 1.4rem;
+        line-height: 2rem;
+        font-size: 2rem;
     }
 }
 
 .about__author-text:nth-child(1) {
     max-width: 53.7rem;
+}
+
+@media (max-width: 1199.98px) {
+    .about__author-text:nth-child(1) {
+        max-width: 100%;
+    }
 }
 
 .about__author-text:nth-child(2) {
@@ -12748,6 +12656,17 @@ a:focus {
     font-size: 2.7rem;
     line-height: 2.6rem;
     margin-bottom: 5rem;
+}
+
+.purpose_block {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+    .purpose_item {
+        margin-bottom: 2.5rem;
+    }
 }
 
 .purpose_item-image {
@@ -12913,7 +12832,7 @@ a:focus {
     right: 1rem;
     width: 3.4rem;
     height: 3.5rem;
-    background-image: url(images/dumbbells.svg);
+    background-image: url(../images/dumbbells.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -12971,7 +12890,7 @@ a:focus {
 
 @media (max-width: 1199.98px) {
     .learning__process-info-item-wrapper {
-        padding-right: 0;
+        padding-right: 0.75rem;
     }
 }
 
@@ -13027,7 +12946,7 @@ a:focus {
 
 .consultation__wrapper {
     padding: 5rem 0;
-    background-image: url(assets/images/rob.jpg);
+    background-image: url(../images/rob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13066,6 +12985,12 @@ a:focus {
     font-weight: 400;
     line-height: 1.6rem;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 575.98px) {
+    .form__wrapper {
+        width: 100%;
+    }
 }
 
 .form-label {
@@ -13308,7 +13233,7 @@ a:focus {
 }
 
 .accordion-button::after {
-    background-image: url(assets/images/arrow.svg);
+    background-image: url(../images/arrow.svg);
 }
 
 .accordion-button:not(.collapsed) {
@@ -13317,7 +13242,7 @@ a:focus {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(assets/images/arrow.svg);
+    background-image: url(../images/arrow.svg);
 }
 
 .accordion-collapse {
@@ -13336,12 +13261,18 @@ a:focus {
     position: relative;
 }
 
-.contacts iframe {
+@media (max-width: 767.98px) {
+    .contacts {
+        position: static;
+    }
+}
+
+iframe {
     display: block;
 }
 
-@media (max-width: 575.98px) {
-    .contacts iframe {
+@media (max-width: 767.98px) {
+    iframe {
         display: none;
     }
 }
@@ -13355,10 +13286,11 @@ a:focus {
     border-radius: 7px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     .contact__block {
-        display: block;
+        position: static;
         width: 100%;
+        border-radius: 7px 7px 0 0;
     }
 }
 
@@ -13378,6 +13310,16 @@ a:focus {
     margin-bottom: 4rem;
 }
 
+@media (max-width: 575.98px) {
+    .contact__title {
+        font-size: 1.8rem;
+    }
+
+    .contact__title--sub {
+        font-size: 1.8rem;
+    }
+}
+
 .contact__subtitle-block {
     display: -ms-flexbox;
     display: flex;
@@ -13391,19 +13333,19 @@ a:focus {
 .contact__subtitle-img {
     width: 2rem;
     height: 2rem;
-    background-image: url(assets/images/black-placeholder-variant.svg);
+    background-image: url(../images/black-placeholder-variant.svg);
     background-position: center;
     background-size: cover;
     margin-right: 1.5rem;
 }
 
 .contact__subtitle-img--email {
-    background-image: url(assets/images/email.svg);
+    background-image: url(../images/email.svg);
     margin-right: 1rem;
 }
 
 .contact__subtitle-img--phone {
-    background-image: url(assets/images/phone-receiver-silhouette.svg);
+    background-image: url(../images/phone-receiver-silhouette.svg);
     margin-right: 1rem;
 }
 
@@ -13433,9 +13375,9 @@ a:focus {
 }
 
 .contact__social-item--insta {
-    background-image: url(assets/images/social/insta.svg);
+    background-image: url(../images/social/insta.svg);
 }
 
 .contact__social-item--youtube {
-    background-image: url(assets/images/social/youtube.svg);
+    background-image: url(../images/social/youtube.svg);
 }

@@ -1,3 +1,8 @@
+.contact__block-submit-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .btn__submit {
     display: inline-block;
     background: $yellow-gradient;
@@ -26,6 +31,9 @@
     }
     &--margin30{
         margin-right: 3rem;
+        @include media-breakpoint-down(sm) { 
+            margin-right: 1rem;
+        }
     }
     &--form{
         display: block;
@@ -36,8 +44,25 @@
         margin-right: auto;
     };
     &--contact{
-        margin-left: 6rem;
+        
+        // margin-left: 6rem;
+        
+        // @include media-breakpoint-down(sm) { 
+        //     margin-left: 5rem;
+        // }
+        // @media (min-width: 375px) and (max-width: 736px) {
+        //     margin-left: 10rem;
+        // }
     }
+
+
+    @include media-breakpoint-down(md) { 
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        padding: 0.9rem 1.3rem;
+    };
+    
+
 }
 
 

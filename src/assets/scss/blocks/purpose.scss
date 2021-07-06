@@ -10,6 +10,20 @@
     line-height: 2.6rem;
     margin-bottom: 5rem ;
 }
+
+
+.purpose_block{
+    flex-direction: row;
+    @include media-breakpoint-down(md) { 
+       flex-direction: column; 
+    }
+    
+}
+.purpose_item{
+    @include media-breakpoint-down(lg) { 
+        margin-bottom: 2.5rem;
+    }
+}
 .purpose_item-image{
     margin-bottom: 1.7rem;
 }
