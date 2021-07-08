@@ -12411,6 +12411,12 @@ a:focus {
     background-position: center;
 }
 
+@media (max-width: 575.98px) {
+    .about__school {
+        height: 60.4rem;
+    }
+}
+
 .about__school-inner {
     width: 100%;
     height: 100%;
@@ -12429,12 +12435,26 @@ a:focus {
     }
 }
 
+@media (max-width: 767.98px) {
+    .about__school-info {
+        padding-top: 12rem;
+    }
+}
+
 .about__school-title {
     padding-right: 4rem;
     font-size: 3rem;
     font-weight: 800;
     color: #FFFFFF;
     line-height: 4.1rem;
+}
+
+@media (max-width: 575.98px) {
+    .about__school-title {
+        padding-right: 0;
+        font-size: 2.1rem;
+        line-height: 2.8rem;
+    }
 }
 
 .about__school-subtitle {
@@ -12447,31 +12467,93 @@ a:focus {
     line-height: 2.7rem;
 }
 
+@media (max-width: 767.98px) {
+    .about__school-subtitle {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about__school-subtitle {
+        padding-right: 0;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        margin-bottom: 10rem;
+    }
+}
+
 .about__school-advantages-block {
     margin-top: 7rem;
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .about__school-advantages-block {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
 }
 
 .about__school-advantages-item {
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.about__school-advantages-item--min {
-    width: 22rem;
-}
-
-.about__school-advantages-item--max {
-    width: 25.9rem;
-}
-
-.about__school-advantages-item--medium {
-    width: 21.6rem;
 }
 
 .about__school-advantages-item h3, .about__school-advantages-item .h3 {
     font-weight: 600;
     margin-left: 1.5rem;
     line-height: 1.9rem;
+}
+
+@media (max-width: 575.98px) {
+    .about__school-advantages-item h3, .about__school-advantages-item .h3 {
+        margin-left: 1rem;
+        line-height: 1.7rem;
+        font-size: 1rem;
+    }
+}
+
+.about__school-advantages-item img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+@media (max-width: 575.98px) {
+    .about__school-advantages-item img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .about__school-advantages-item {
+        max-width: 26rem;
+        min-width: 24rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about__school-advantages-item:nth-child(2) {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about__school-advantages-item {
+        min-width: 14rem;
+        max-width: 18rem;
+    }
+}
+
+.contact__block-submit-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .btn__submit {
@@ -12509,6 +12591,12 @@ a:focus {
     margin-right: 3rem;
 }
 
+@media (max-width: 575.98px) {
+    .btn__submit--margin30 {
+        margin-right: 1rem;
+    }
+}
+
 .btn__submit--form {
     display: block;
     color: #152D33;
@@ -12516,10 +12604,6 @@ a:focus {
     margin-top: 3.3rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-.btn__submit--contact {
-    margin-left: 6rem;
 }
 
 @media (max-width: 767.98px) {
@@ -12607,6 +12691,12 @@ a:focus {
     }
 }
 
+@media (max-width: 767.98px) {
+    .about__author-text {
+        font-size: 1.8rem;
+    }
+}
+
 .about__author-text:nth-child(1) {
     max-width: 53.7rem;
 }
@@ -12659,11 +12749,18 @@ a:focus {
 }
 
 .purpose_block {
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
 
 @media (max-width: 767.98px) {
+    .purpose_block {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991.98px) {
     .purpose_item {
         margin-bottom: 2.5rem;
     }
@@ -12766,6 +12863,12 @@ a:focus {
     background-color: #152D33;
 }
 
+@media (max-width: 575.98px) {
+    .price {
+        padding: 0 0 2rem 0;
+    }
+}
+
 .price__title {
     font-weight: 800;
     font-size: 2.7rem;
@@ -12799,6 +12902,16 @@ a:focus {
     }
 }
 
+@media (max-width: 767.98px) {
+    .price__block {
+        overflow-x: visible;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .price__block .col {
     width: 37rem;
 }
@@ -12820,8 +12933,23 @@ a:focus {
     position: relative;
 }
 
+@media (max-width: 767.98px) {
+    .price__item {
+        max-width: 28.7rem;
+        min-width: 28.7rem;
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+    }
+}
+
 .price__item:first-child {
     margin-left: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .price__item:first-child {
+        margin-left: 0;
+    }
 }
 
 .price__item:after {
@@ -12860,6 +12988,12 @@ a:focus {
 @media (max-width: 1199.98px) {
     .learning__process {
         margin: 8rem 0 5.5rem 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .learning__process {
+        margin: 4rem 0 4.5rem 0;
     }
 }
 
@@ -12989,7 +13123,8 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .form__wrapper {
-        width: 100%;
+        width: 90%;
+        margin-right: auto;
     }
 }
 
@@ -13236,6 +13371,14 @@ a:focus {
     background-image: url(../images/arrow.svg);
 }
 
+@media (max-width: 575.98px) {
+    .accordion-button {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 1rem 2rem;
+    }
+}
+
 .accordion-button:not(.collapsed) {
     background-color: #152D33;
     color: #FFFFFF;
@@ -13255,6 +13398,12 @@ a:focus {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.4rem;
+}
+
+@media (max-width: 575.98px) {
+    .accordion-body {
+        padding: 1rem 2rem;
+    }
 }
 
 .contacts {
@@ -13279,7 +13428,7 @@ iframe {
 
 .contact__block {
     position: absolute;
-    top: 11rem;
+    top: 13rem;
     width: 38rem;
     padding: 2.5rem;
     background-color: #152D33;
@@ -13311,11 +13460,13 @@ iframe {
 }
 
 @media (max-width: 575.98px) {
-    .contact__title {
+    .contact__title--sub {
         font-size: 1.8rem;
     }
+}
 
-    .contact__title--sub {
+@media (max-width: 575.98px) {
+    .contact__title {
         font-size: 1.8rem;
     }
 }
@@ -13354,6 +13505,12 @@ iframe {
     font-weight: 400;
     line-height: 2.4rem;
     color: #FFFFFF;
+}
+
+@media (max-width: 575.98px) {
+    .contact__subtitle-text {
+        font-size: 1.4rem;
+    }
 }
 
 .contact__social {
