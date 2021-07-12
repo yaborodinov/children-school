@@ -1,0 +1,42 @@
+.quote{
+    padding: 5rem 0;
+}
+
+.quote__text-block{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+.quote__text{
+    color: $primary;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+.quote__quote-left, .quote__quote-right{
+    position: absolute;
+    
+    line-height: 0;
+    color: red;
+    font-size: 7.6rem;
+}
+
+.quote__quote-left{
+    top: -3rem;
+    left: -3rem;
+}
+
+.quote__quote-right{
+    bottom: 0;
+    right: -3rem;
+}
